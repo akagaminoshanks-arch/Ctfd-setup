@@ -1,0 +1,377 @@
+{
+  "event": {
+    "name": "YIT College CTF MVP",
+    "account_mode": "teams",
+    "team_size": 2,
+    "flag_format": "YITCTF{...}"
+  },
+  "challenges": [
+    {
+      "id": "C1",
+      "name": "Caesar's Last Message",
+      "category": "Cryptography",
+      "value": 100,
+      "files": [
+        "artifacts/crypto/c1_last_message.txt"
+      ],
+      "hint": "Try shifting every letter by the same amount.",
+      "flag": "YITCTF{shift_happens}",
+      "solution": "Apply a Caesar shift of -7."
+    },
+    {
+      "id": "C2",
+      "name": "Base64 Isn't Encryption",
+      "category": "Cryptography",
+      "value": 100,
+      "files": [
+        "artifacts/crypto/c2_layers.txt"
+      ],
+      "hint": "Base64 text often ends in =. Decode repeatedly.",
+      "flag": "YITCTF{base64_is_just_encoding}",
+      "solution": "Base64-decode twice."
+    },
+    {
+      "id": "C3",
+      "name": "The Broken Cipher",
+      "category": "Cryptography",
+      "value": 200,
+      "files": [
+        "artifacts/crypto/c3_broken_cipher.txt"
+      ],
+      "hint": "It is a repeating-key classical cipher; the direction is NORTH.",
+      "flag": "YITCTF{vigenere_needs_a_key}",
+      "solution": "Vigenere-decrypt with key NORTH."
+    },
+    {
+      "id": "C4",
+      "name": "RSA's Little Mistake",
+      "category": "Cryptography",
+      "value": 300,
+      "files": [
+        "artifacts/crypto/c4_rsa.txt"
+      ],
+      "hint": "3233 factors into two small primes. Calculate d, then m = c^d mod n.",
+      "flag": "YITCTF{rsa_small_primes_fail}",
+      "solution": "Factor n=61*53; d=2753; decrypt c=2790 to 65, then Caesar-decrypt the supplied text by 65."
+    },
+    {
+      "id": "W1",
+      "name": "Hidden in Plain Sight",
+      "category": "Web",
+      "value": 100,
+      "connection": "http://SERVER:8101",
+      "hint": "Browsers receive more than they render.",
+      "flag": "YITCTF{comments_are_source_code}",
+      "solution": "View page source and read the HTML comment."
+    },
+    {
+      "id": "W2",
+      "name": "Cookie Monster",
+      "category": "Web",
+      "value": 150,
+      "connection": "http://SERVER:8102",
+      "hint": "Cookies live on the client. Inspect and decode the role value.",
+      "flag": "YITCTF{cookies_are_client_side}",
+      "solution": "Change the Base64 role cookie from user to admin (YWRtaW4=), then reload."
+    },
+    {
+      "id": "W3",
+      "name": "The Weak Login",
+      "category": "Web",
+      "value": 250,
+      "connection": "http://SERVER:8103",
+      "hint": "What happens when a quote changes a login query? Try the conventional admin comment payload.",
+      "flag": "YITCTF{parameterized_queries_win}",
+      "solution": "Submit username admin' -- (URL-encoded by browser) with any password. This is a simulation only; no DB is present."
+    },
+    {
+      "id": "W4",
+      "name": "The Forgotten Endpoint",
+      "category": "Web",
+      "value": 300,
+      "connection": "http://SERVER:8104",
+      "hint": "Sites sometimes tell crawlers where not to look.",
+      "flag": "YITCTF{robots_remember_paths}",
+      "solution": "Read /robots.txt and browse to /archive/."
+    },
+    {
+      "id": "F1",
+      "name": "What's in the Image?",
+      "category": "Forensics",
+      "value": 100,
+      "files": [
+        "artifacts/forensics/f1_whats_in_the_image.png"
+      ],
+      "hint": "Inspect PNG text chunks or metadata.",
+      "flag": "YITCTF{pngs_can_talk}",
+      "solution": "Use strings, exiftool, or a PNG chunk viewer."
+    },
+    {
+      "id": "F2",
+      "name": "Metadata",
+      "category": "Forensics",
+      "value": 100,
+      "files": [
+        "artifacts/forensics/f2_metadata.jpg"
+      ],
+      "hint": "Ask the file what it says about itself.",
+      "flag": "YITCTF{metadata_matters}",
+      "solution": "Run strings or metadata tooling and read the Comment field."
+    },
+    {
+      "id": "F3",
+      "name": "Packet Hunt",
+      "category": "Forensics",
+      "value": 200,
+      "files": [
+        "artifacts/forensics/f3_packet_hunt.pcap"
+      ],
+      "hint": "Follow UDP payloads; display filters can help.",
+      "flag": "YITCTF{packets_tell_stories}",
+      "solution": "Open in Wireshark and inspect UDP packet data."
+    },
+    {
+      "id": "F4",
+      "name": "Deleted Evidence",
+      "category": "Forensics",
+      "value": 300,
+      "files": [
+        "artifacts/forensics/f4_deleted_evidence.zip"
+      ],
+      "hint": "Not every useful file has a friendly name.",
+      "flag": "YITCTF{deleted_is_not_gone}",
+      "solution": "List archive contents including hidden-looking paths, then read recovered/.evidence.txt."
+    },
+    {
+      "id": "O1",
+      "name": "Find the Place",
+      "category": "OSINT",
+      "value": 100,
+      "files": [
+        "artifacts/osint/o1_find_the_place.html"
+      ],
+      "hint": "Coordinates identify a city. This event uses fictional/offline evidence only.",
+      "flag": "YITCTF{barcelona_from_coordinates}",
+      "solution": "Map the coordinates 41.40338, 2.17403 to Barcelona; flag is supplied in source as validation."
+    },
+    {
+      "id": "O2",
+      "name": "Digital Footprints",
+      "category": "OSINT",
+      "value": 150,
+      "files": [
+        "artifacts/osint/o2_digital_footprints.html"
+      ],
+      "hint": "Archived profile details are clues; inspect source too.",
+      "flag": "YITCTF{handles_leave_traces}",
+      "solution": "Read the provided fictional archive and its source."
+    },
+    {
+      "id": "O3",
+      "name": "The Missing Developer",
+      "category": "OSINT",
+      "value": 200,
+      "files": [
+        "artifacts/osint/o3_missing_developer.zip"
+      ],
+      "hint": "Contributor records, commit logs, and remotes form a trail.",
+      "flag": "YITCTF{aria_found_the_repo}",
+      "solution": "Extract archive and correlate the fictional contributor information."
+    },
+    {
+      "id": "O4",
+      "name": "The Final Connection",
+      "category": "OSINT",
+      "value": 300,
+      "files": [
+        "artifacts/osint/o4_final_connection.zip"
+      ],
+      "hint": "Combine the codename and launch window from separate records.",
+      "flag": "YITCTF{orbit_blue_7}",
+      "solution": "Extract and combine ORBIT with BLUE-7."
+    },
+    {
+      "id": "R1",
+      "name": "Strings Don't Lie",
+      "category": "Reverse Engineering",
+      "value": 150,
+      "files": [
+        "artifacts/reverse/strings-dont-lie.pyc"
+      ],
+      "hint": "Start with strings. The supplied file is Python bytecode.",
+      "flag": "YITCTF{strings_are_clues}",
+      "solution": "Run strings on the pyc or decompile it."
+    },
+    {
+      "id": "R2",
+      "name": "Crack the Code",
+      "category": "Reverse Engineering",
+      "value": 300,
+      "files": [
+        "artifacts/reverse/crack-the-code.pyc"
+      ],
+      "hint": "The program compares a transformed input. XOR is its own inverse.",
+      "flag": "YITCTF{xor_is_reversible}",
+      "solution": "Decompile or extract TARGET/KEY and XOR each target byte with 117."
+    },
+    {
+      "id": "M1",
+      "name": "The Strange File",
+      "category": "Misc",
+      "value": 100,
+      "files": [
+        "artifacts/misc/m1_strange_file.dat"
+      ],
+      "hint": "Trust file signatures, not extensions. You may have two layers to unwrap.",
+      "flag": "YITCTF{magic_bytes_first}",
+      "solution": "Identify gzip magic bytes, decompress, then Base64-decode."
+    },
+    {
+      "id": "M2",
+      "name": "Think Outside the Box",
+      "category": "Misc",
+      "value": 250,
+      "files": [
+        "artifacts/misc/m2_outside_the_box.zip"
+      ],
+      "hint": "A container can contain another container.",
+      "flag": "YITCTF{there_is_always_another_layer}",
+      "solution": "Extract the outer ZIP, then box/another_box.zip."
+    },
+    {
+      "id": "C5",
+      "name": "ROT13 Rendezvous",
+      "category": "Cryptography",
+      "value": 100,
+      "hint": "Try a Caesar shift where the alphabet wraps halfway around.",
+      "flag": "YITCTF{rot13_is_not_secret}",
+      "solution": "Apply ROT13 to the provided message."
+    },
+    {
+      "id": "C6",
+      "name": "Hexed Message",
+      "category": "Cryptography",
+      "value": 100,
+      "files": [
+        "artifacts/crypto/c6_hex.txt"
+      ],
+      "hint": "Look at the characters: 0-9 and A-F are a clue.",
+      "flag": "YITCTF{hex_is_just_encoding}",
+      "solution": "Convert the hex string to ASCII."
+    },
+    {
+      "id": "C7",
+      "name": "Binary Whisper",
+      "category": "Cryptography",
+      "value": 150,
+      "files": [
+        "artifacts/crypto/c7_binary.txt"
+      ],
+      "hint": "Eight bits can represent one character.",
+      "flag": "YITCTF{binary_speaks}",
+      "solution": "Convert binary to ASCII."
+    },
+    {
+      "id": "W5",
+      "name": "Inspect Me",
+      "category": "Web",
+      "value": 100,
+      "connection": "http://SERVER:8105",
+      "hint": "The browser shows more than what you see.",
+      "flag": "YITCTF{html_comments_hide_things}",
+      "solution": "View page source and read the HTML comment."
+    },
+    {
+      "id": "W6",
+      "name": "The Secret Parameter",
+      "category": "Web",
+      "value": 150,
+      "connection": "http://SERVER:8106",
+      "hint": "Sometimes the URL controls more than the page.",
+      "flag": "YITCTF{parameters_can_change_things}",
+      "solution": "Add ?debug=true to the URL to see the flag."
+    },
+    {
+      "id": "W7",
+      "name": "Case Sensitive",
+      "category": "Web",
+      "value": 150,
+      "connection": "http://SERVER:8107",
+      "hint": "JavaScript can reveal what the server forgot to hide.",
+      "flag": "YITCTF{client_side_is_not_secret}",
+      "solution": "Inspect the JavaScript for credentials and log in."
+    },
+    {
+      "id": "F5",
+      "name": "Hidden in the Filename",
+      "category": "Forensics",
+      "value": 100,
+      "files": [
+        "artifacts/forensics/YITCTF{filenames_can_tell_stories}.txt"
+      ],
+      "hint": "Sometimes the file tells you more about itself than its contents do.",
+      "flag": "YITCTF{filenames_can_tell_stories}",
+      "solution": "Notice the flag in the filename."
+    },
+    {
+      "id": "F6",
+      "name": "Echo in the Text",
+      "category": "Forensics",
+      "value": 100,
+      "files": [
+        "artifacts/forensics/f6_echo_log.txt"
+      ],
+      "hint": "Search through the evidence.",
+      "flag": "YITCTF{grep_finds_the_clue}",
+      "solution": "Grep the file for the flag line."
+    },
+    {
+      "id": "F7",
+      "name": "Double Extension",
+      "category": "Forensics",
+      "value": 150,
+      "files": [
+        "artifacts/forensics/f7_double_extension.jpg.png"
+      ],
+      "hint": "Don't always trust the extension.",
+      "flag": "YITCTF{magic_bytes_matter}",
+      "solution": "Use file command to see true type and read the comment chunk."
+    },
+    {
+      "id": "O5",
+      "name": "The Username Trail",
+      "category": "OSINT",
+      "value": 100,
+      "files": [
+        "artifacts/osint/o5_username_trail.txt"
+      ],
+      "hint": "A username can appear in more than one place.",
+      "flag": "YITCTF{follow_the_username}",
+      "solution": "Correlate the clues to discover the username and derive the flag."
+    },
+    {
+      "id": "R3",
+      "name": "Read the Strings",
+      "category": "Reverse Engineering",
+      "value": 150,
+      "files": [
+        "artifacts/reverse/r3_strings.pyc"
+      ],
+      "hint": "Before reversing everything, look at what the program says.",
+      "flag": "YITCTF{strings_are_your_friend}",
+      "solution": "Run strings on the bytecode to find the flag."
+    },
+    {
+      "id": "M3",
+      "name": "Three Layers",
+      "category": "Misc",
+      "value": 150,
+      "files": [
+        "artifacts/misc/m3_three_layers.txt"
+      ],
+      "hint": "One encoding is rarely the whole story.",
+      "flag": "YITCTF{layers_upon_layers}",
+      "solution": "Decode Base64 \u2192 Hex \u2192 Base64 to reveal the flag."
+    }
+  ]
+}

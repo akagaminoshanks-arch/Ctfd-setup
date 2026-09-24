@@ -1,0 +1,2 @@
+Decode every layer until you reach the flag:
+V1VsVVExUkdlMkpoYzJVMk5GOXBjMTlxZFhOMFgyVnVZMjlrYVc1bmZRPT0=

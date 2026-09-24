@@ -1,0 +1,67 @@
+R3 bytecode exists: True
+R3 flag matches manifest: True
+compose.web.yml valid YAML: True
+docker compose config exit 0
+docker compose clean build exit 0
+Web flag detection: W1:True, W2:False, W3:False, W4:False, W5:False, W6:False, W7:False
+Challenges solved: 6/32
+Broken challenges: C1, C2, C3, C4, W2, W3, W4, F3, F4, O1, O2, O3, O4, R1, R2, M1, M2, C5, C6, C7, W5, W6, W7, O5, R3, M3
+Flag leak found: YITCTF{shift_happens} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{base64_is_just_encoding} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{vigenere_needs_a_key} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{rsa_small_primes_fail} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{comments_are_source_code} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{cookies_are_client_side} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{parameterized_queries_win} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{robots_remember_paths} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{pngs_can_talk} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{metadata_matters} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{packets_tell_stories} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{deleted_is_not_gone} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{barcelona_from_coordinates} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{handles_leave_traces} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{aria_found_the_repo} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{orbit_blue_7} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{strings_are_clues} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{xor_is_reversible} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{magic_bytes_first} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{there_is_always_another_layer} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{rot13_is_not_secret} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{hex_is_just_encoding} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{binary_speaks} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{html_comments_hide_things} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{parameters_can_change_things} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{client_side_is_not_secret} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{filenames_can_tell_stories} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{grep_finds_the_clue} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{magic_bytes_matter} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{follow_the_username} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{strings_are_your_friend} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{layers_upon_layers} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\challenge_manifest.json
+Flag leak found: YITCTF{shift_happens} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{base64_is_just_encoding} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{vigenere_needs_a_key} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{rsa_small_primes_fail} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{pngs_can_talk} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{metadata_matters} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{packets_tell_stories} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{deleted_is_not_gone} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{barcelona_from_coordinates} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{handles_leave_traces} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{aria_found_the_repo} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{orbit_blue_7} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{strings_are_clues} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{xor_is_reversible} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{magic_bytes_first} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{there_is_always_another_layer} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\generate_artifacts.py
+Flag leak found: YITCTF{strings_are_your_friend} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\reverse\r3_strings_src.py
+Flag leak found: YITCTF{comments_are_source_code} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\web\app.py
+Flag leak found: YITCTF{cookies_are_client_side} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\web\app.py
+Flag leak found: YITCTF{parameterized_queries_win} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\web\app.py
+Flag leak found: YITCTF{robots_remember_paths} in C:\Users\abhin\Downloads\hackathon-timer\New folder\yit-ctf-challenge-pack\challenge-pack\web\app.py
+Total unintended flag leaks: 53
+qa_report.md present (should be removed before deploy): True
+Docker compose declares volumes: False
+Manifest IDs unique: True
+Manifest flags unique: True
+Total challenges listed: 32

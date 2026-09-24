@@ -1,0 +1,6 @@
+n = 3233
+e = 17
+c = 2790
+
+Decrypt c. Use the resulting integer as a Caesar shift to decrypt:
+LVGPGS{efn_fznyy_cevzrf_snvy}

@@ -1,0 +1,64 @@
+services:
+  yit-web-1:
+    build: ./web
+    environment: [CHALLENGE=w1]
+    ports: ["${WEB_BIND:-127.0.0.1}:8101:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-2:
+    build: ./web
+    environment: [CHALLENGE=w2]
+    ports: ["${WEB_BIND:-127.0.0.1}:8102:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-3:
+    build: ./web
+    environment: [CHALLENGE=w3]
+    ports: ["${WEB_BIND:-127.0.0.1}:8103:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-4:
+    build: ./web
+    environment: [CHALLENGE=w4]
+    ports: ["${WEB_BIND:-127.0.0.1}:8104:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-5:
+    build: ./web
+    environment: [CHALLENGE=w5]
+    ports: ["${WEB_BIND:-127.0.0.1}:8105:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-6:
+    build: ./web
+    environment: [CHALLENGE=w6]
+    ports: ["${WEB_BIND:-127.0.0.1}:8106:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
+  yit-web-7:
+    build: ./web
+    environment: [CHALLENGE=w7]
+    ports: ["${WEB_BIND:-127.0.0.1}:8107:8080"]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    restart: unless-stopped
